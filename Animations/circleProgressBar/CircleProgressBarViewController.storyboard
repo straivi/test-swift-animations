@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Circle Progress Bar View Controller-->
+        <scene sceneID="WbR-WG-ces">
+            <objects>
+                <viewController storyboardIdentifier="CircleProgressBarViewController" id="BoE-XZ-6sE" customClass="CircleProgressBarViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UxA-aA-7Tn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="990-9g-WoK">
+                                <rect key="frame" x="107" y="144" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0Qg-z0-CjT"/>
+                                    <constraint firstAttribute="height" constant="200" id="bLF-tw-gun"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="990-9g-WoK" firstAttribute="top" secondItem="yI6-iR-oYR" secondAttribute="top" constant="100" id="7eg-0y-l0q"/>
+                            <constraint firstItem="990-9g-WoK" firstAttribute="centerX" secondItem="yI6-iR-oYR" secondAttribute="centerX" id="iEQ-lv-Yhr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yI6-iR-oYR"/>
+                    </view>
+                    <connections>
+                        <outlet property="barBackgroundView" destination="990-9g-WoK" id="6CY-rb-N93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMx-Ud-b6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56" y="21"/>
+        </scene>
+    </scenes>
+</document>

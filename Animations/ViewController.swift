@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         registerXibCell()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? CustomTableViewCell {
+            print(cell.buttonView.frame.height)
+        }
+    }
+    
     
     private func registerXibCell() {
         let nibCell = UINib(nibName: cellId, bundle: nil)

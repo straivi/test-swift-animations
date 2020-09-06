@@ -15,6 +15,8 @@
 		BABFF3CB250431B000EDEEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABFF3C9250431B000EDEEF5 /* LaunchScreen.storyboard */; };
 		BABFF3DC2504494000EDEEF5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFF3DA2504494000EDEEF5 /* CustomTableViewCell.swift */; };
 		BABFF3DD2504494000EDEEF5 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABFF3DB2504494000EDEEF5 /* CustomTableViewCell.xib */; };
+		BABFF3E12504519F00EDEEF5 /* CircleProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFF3E02504519F00EDEEF5 /* CircleProgressBarViewController.swift */; };
+		BABFF3E3250452C600EDEEF5 /* CircleProgressBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABFF3E2250452C600EDEEF5 /* CircleProgressBarViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		BABFF3CC250431B000EDEEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BABFF3DA2504494000EDEEF5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		BABFF3DB2504494000EDEEF5 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		BABFF3E02504519F00EDEEF5 /* CircleProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBarViewController.swift; sourceTree = "<group>"; };
+		BABFF3E2250452C600EDEEF5 /* CircleProgressBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CircleProgressBarViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,35 @@
 		BABFF3BD250431AE00EDEEF5 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				BABFF3DF2504516100EDEEF5 /* circleProgressBar */,
+				BABFF3DE2504513300EDEEF5 /* cell */,
 				BABFF3BE250431AE00EDEEF5 /* AppDelegate.swift */,
 				BABFF3C0250431AE00EDEEF5 /* SceneDelegate.swift */,
 				BABFF3C2250431AE00EDEEF5 /* ViewController.swift */,
 				BABFF3C4250431AE00EDEEF5 /* Main.storyboard */,
-				BABFF3DA2504494000EDEEF5 /* CustomTableViewCell.swift */,
-				BABFF3DB2504494000EDEEF5 /* CustomTableViewCell.xib */,
 				BABFF3C7250431B000EDEEF5 /* Assets.xcassets */,
 				BABFF3C9250431B000EDEEF5 /* LaunchScreen.storyboard */,
 				BABFF3CC250431B000EDEEF5 /* Info.plist */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		BABFF3DE2504513300EDEEF5 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				BABFF3DA2504494000EDEEF5 /* CustomTableViewCell.swift */,
+				BABFF3DB2504494000EDEEF5 /* CustomTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		BABFF3DF2504516100EDEEF5 /* circleProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				BABFF3E02504519F00EDEEF5 /* CircleProgressBarViewController.swift */,
+				BABFF3E2250452C600EDEEF5 /* CircleProgressBarViewController.storyboard */,
+			);
+			path = circleProgressBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +155,7 @@
 			files = (
 				BABFF3CB250431B000EDEEF5 /* LaunchScreen.storyboard in Resources */,
 				BABFF3C8250431B000EDEEF5 /* Assets.xcassets in Resources */,
+				BABFF3E3250452C600EDEEF5 /* CircleProgressBarViewController.storyboard in Resources */,
 				BABFF3DD2504494000EDEEF5 /* CustomTableViewCell.xib in Resources */,
 				BABFF3C6250431AE00EDEEF5 /* Main.storyboard in Resources */,
 			);
@@ -146,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABFF3C3250431AE00EDEEF5 /* ViewController.swift in Sources */,
+				BABFF3E12504519F00EDEEF5 /* CircleProgressBarViewController.swift in Sources */,
 				BABFF3BF250431AE00EDEEF5 /* AppDelegate.swift in Sources */,
 				BABFF3DC2504494000EDEEF5 /* CustomTableViewCell.swift in Sources */,
 				BABFF3C1250431AE00EDEEF5 /* SceneDelegate.swift in Sources */,

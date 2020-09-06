@@ -10,9 +10,13 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var buttonView: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        buttonView.translatesAutoresizingMaskIntoConstraints = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
