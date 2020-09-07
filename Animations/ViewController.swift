@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     let cellId = String(describing: CustomTableViewCell.self)
     
+    lazy var model = [#selector(openCircleBarVC)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,15 +39,23 @@ class ViewController: UIViewController {
         
         tableView.register(nibCell, forCellReuseIdentifier: cellId)
     }
+    
+    @objc private func openCircleBarVC() {
+        let vcId = String(describing: CircleProgressBarViewController.self)
+        let sb = UIStoryboard(name: vcId, bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: vcId)
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        return model.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? CustomTableViewCell {
+            cell.buttonView.addTarget(self, action: model[indexPath.row], for: .touchUpInside)
             return cell
         }
         
