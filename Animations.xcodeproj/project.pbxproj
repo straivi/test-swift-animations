@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA6FCF522506EC3A004CD58C /* UICircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FCF512506EC3A004CD58C /* UICircleProgressBar.swift */; };
 		BABFF3BF250431AE00EDEEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFF3BE250431AE00EDEEF5 /* AppDelegate.swift */; };
 		BABFF3C1250431AE00EDEEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFF3C0250431AE00EDEEF5 /* SceneDelegate.swift */; };
 		BABFF3C3250431AE00EDEEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFF3C2250431AE00EDEEF5 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA6FCF512506EC3A004CD58C /* UICircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICircleProgressBar.swift; sourceTree = "<group>"; };
 		BABFF3BB250431AE00EDEEF5 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABFF3BE250431AE00EDEEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABFF3C0250431AE00EDEEF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA6FCF502506EBFA004CD58C /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				BA6FCF512506EC3A004CD58C /* UICircleProgressBar.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
 		BABFF3B2250431AE00EDEEF5 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		BABFF3BD250431AE00EDEEF5 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				BA6FCF502506EBFA004CD58C /* UIElements */,
 				BABFF3DF2504516100EDEEF5 /* circleProgressBar */,
 				BABFF3DE2504513300EDEEF5 /* cell */,
 				BABFF3BE250431AE00EDEEF5 /* AppDelegate.swift */,
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA6FCF522506EC3A004CD58C /* UICircleProgressBar.swift in Sources */,
 				BABFF3C3250431AE00EDEEF5 /* ViewController.swift in Sources */,
 				BABFF3E12504519F00EDEEF5 /* CircleProgressBarViewController.swift in Sources */,
 				BABFF3BF250431AE00EDEEF5 /* AppDelegate.swift in Sources */,

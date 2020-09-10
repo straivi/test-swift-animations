@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,32 +12,76 @@
             <objects>
                 <viewController storyboardIdentifier="CircleProgressBarViewController" id="BoE-XZ-6sE" customClass="CircleProgressBarViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UxA-aA-7Tn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="990-9g-WoK">
-                                <rect key="frame" x="107" y="144" width="200" height="200"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="87.5" y="100" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.60271537303924561" blue="0.60271537303924561" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="0Qg-z0-CjT"/>
                                     <constraint firstAttribute="height" constant="200" id="bLF-tw-gun"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-bQ-9qB">
+                                <rect key="frame" x="221" y="425" width="69" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="playAction:" destination="BoE-XZ-6sE" eventType="touchUpInside" id="SP3-Om-N8P"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="progress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9k8-K9-czx">
+                                <rect key="frame" x="54" y="421" width="141" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0B5-Wg-OOc">
+                                <rect key="frame" x="54" y="484" width="141" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSn-wZ-585">
+                                <rect key="frame" x="219" y="490" width="72" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="stop.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="stopAction:" destination="BoE-XZ-6sE" eventType="touchUpInside" id="uVE-e4-bQN"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dp2-q4-w2G" customClass="GradientArcView" customModule="Animations" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="547" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Srt-G7-sal"/>
+                                    <constraint firstAttribute="height" constant="100" id="gLC-fS-Xw3"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="990-9g-WoK" firstAttribute="top" secondItem="yI6-iR-oYR" secondAttribute="top" constant="100" id="7eg-0y-l0q"/>
+                            <constraint firstItem="dp2-q4-w2G" firstAttribute="centerX" secondItem="yI6-iR-oYR" secondAttribute="centerX" id="TvY-5L-6yW"/>
+                            <constraint firstItem="yI6-iR-oYR" firstAttribute="bottom" secondItem="dp2-q4-w2G" secondAttribute="bottom" constant="20" id="Zf7-ut-A9a"/>
                             <constraint firstItem="990-9g-WoK" firstAttribute="centerX" secondItem="yI6-iR-oYR" secondAttribute="centerX" id="iEQ-lv-Yhr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yI6-iR-oYR"/>
                     </view>
                     <connections>
                         <outlet property="barBackgroundView" destination="990-9g-WoK" id="6CY-rb-N93"/>
+                        <outlet property="progressTextField" destination="9k8-K9-czx" id="1dV-Jg-7gv"/>
+                        <outlet property="timeintervalTextField" destination="0B5-Wg-OOc" id="wka-JO-Brw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMx-Ud-b6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-56" y="21"/>
+            <point key="canvasLocation" x="-56.799999999999997" y="20.239880059970016"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
+    </resources>
 </document>
